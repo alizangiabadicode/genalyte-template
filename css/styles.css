@@ -10,8 +10,16 @@
   font-size: 12px !important;
 }
 
+.text-10 {
+  font-size: 10px !important;
+}
+
 .text-8 {
   font-size: 14px !important;
+}
+
+.text-6 {
+  font-size: 6px !important;
 }
 
 .bg-gray {
@@ -47,15 +55,23 @@ p {
 
 .transform-90 {
   position: relative;
-  top: 20px;
-  /* identical to box height, or 262% */
+  display: block;
+  top: 50%;
+}
+
+.transform-90 p {
+  position: absolute;
+  top: 0;
+  width: -webkit-max-content;
+  width: -moz-max-content;
+  width: max-content;
+  bottom: 0;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  letter-spacing: 0.25px;
   color: rgba(0, 0, 0, 0.46);
   -webkit-transform: rotate(-90deg);
           transform: rotate(-90deg);
@@ -67,8 +83,8 @@ p {
 }
 
 .circle {
-  width: 130px;
-  height: 130px;
+  width: 110px;
+  height: 110px;
   border-radius: 50%;
   border: 1px solid #f3c28f;
   -webkit-box-sizing: border-box;
@@ -77,6 +93,10 @@ p {
 
 .circle .centered-text {
   color: #f3c28f;
+}
+
+.circle-purple .circle {
+  border-color: rgba(103, 90, 153, 0.45);
 }
 
 .translate-left {
@@ -103,7 +123,7 @@ p {
   margin-right: 3px;
 }
 
-.what-now-wrapper > div {
-  height: 113px;
+.text-light-gray {
+  color: rgba(0, 0, 0, 0.42);
 }
 /*# sourceMappingURL=styles.css.map */
